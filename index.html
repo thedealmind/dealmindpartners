@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>DealMind Partners</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>DealMind Partners</h1>
+            <p>Revolutionizing Small and Medium Enterprise (SME) Investing <br />
+            <strong>Coming Soon</strong></p>
+        </header>
+
+        <!-- Signup Form -->
+        <form id="signup-form" method="post" action="mailto:info@dealmindpartners.com" onsubmit="return validateForm()">
+            <input type="email" name="email" id="email" placeholder="Email Address" required />
+            <input type="submit" value="Sign Up" />
+        </form>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; 2024 DealMind Partners.</li>
+                <li><a href="mailto:contactus@dealmindpartners.com">contactus@dealmindpartners.com</a></li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                if (email == "") {
+                    alert("Please enter an email address.");
+                    return false;
+                }
+                alert("Thank you for signing up!");
+                return true;
+            }
+        </script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
